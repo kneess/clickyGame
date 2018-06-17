@@ -30,6 +30,14 @@ class App extends Component  {
     } else 
     this.setState({ topScore: this.state.topScore})
   }
+  shuffle = () => {
+    // let newtrees = this.state.trees
+    for(let i = this.state.trees.length -1; i> 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.state.trees[i], this.state.trees[j]] = [this.state.trees[j], this.state.trees[i]]
+    }
+    this.setState({ trees: this.state.trees});
+  }
 
   changeClickedStatus= id => {
     console.log(id)
@@ -42,6 +50,7 @@ class App extends Component  {
        this.endGame();
     } else {
       newArray.push(id);
+      this.shuffle();
       this.setState({ score: this.state.score + 1 })
     }
       // newState = {
