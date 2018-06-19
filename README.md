@@ -13,7 +13,7 @@ Collect points by clicking on the images without repeating a click on an image. 
 1. Created using react
 
 ## Game link
-![Game](https://young-woodland-74395.herokuapp.com/"Clicky Game!!!")
+![Game](https://young-woodland-74395.herokuapp.com/)
 
 ## Code link
-![Github](https://github.com/kneess/clickyGame"GitHub")
+![Github](https://github.com/kneess/clickyGame)
