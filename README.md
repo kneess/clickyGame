@@ -4,7 +4,7 @@
 
 ## Objective of the game 
 
-Collect points by clicking on the images without repeating a click on an image. If image is clicked 2x the score will reset and high score will be saved for the session that the game is played.
+Collect points by clicking on the images without repeating a click on an image. If an image is clicked 2x the score will reset and the high score will be saved for the session that the game is played.
 
 ---------------
 
