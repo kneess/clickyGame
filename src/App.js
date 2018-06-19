@@ -3,7 +3,10 @@ import Cards from "./components/Cards/Cards";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import trees from "./trees.json"
+import Header from "./components/Header";
+import trees from "./trees.json";
+import "./App.css"
+
 
 class App extends Component  {
   state = {
@@ -13,25 +16,21 @@ class App extends Component  {
     idArray: []
   };
 
-  //  // handleIncrement increases this.state.count by 1
-  //  handleIncrement = event => {
-  //   //  console.log(this.state.isClicked)
-  //   event.preventDefault();
-  //   // We always use the setState method to update a component's state
-  //   this.setState({ score: this.state.score + 1 });
-  // };
+  // resets game
   endGame = () => {
     this.setState({score: 0, idArray: []});
     this.highScore();
     }
+
   highScore = () => {
+    //check to see if current score is higher than topSCore
     if(this.state.score > this.state.topScore) {
       this.setState({ topScore: this.state.score})
     } else 
     this.setState({ topScore: this.state.topScore})
   }
   shuffle = () => {
-    // let newtrees = this.state.trees
+    // re arrange trees array each time a card is clicked which will re arrange cards
     for(let i = this.state.trees.length -1; i> 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [this.state.trees[i], this.state.trees[j]] = [this.state.trees[j], this.state.trees[i]]
@@ -42,26 +41,17 @@ class App extends Component  {
   changeClickedStatus= id => {
     console.log(id)
     
-   
-    const newArray = this.state.idArray;
-    console.log("newArray", newArray);
-   
+    // checks to see if card id is in idArray if it does game ends saves high score
+    // if not adds to idArray and shuffles cards
     if(this.state.idArray.includes(id)) {
        this.endGame();
     } else {
-      newArray.push(id);
+      this.state.idArray.push(id);
       this.shuffle();
       this.setState({ score: this.state.score + 1 })
     }
-      // newState = {
-      // score: this.state.score + 1,
-      // topScore: this.state.topScore + 1,
-      //   }  
-   
-      // this.setState(newState);
-      // console.log("newState", newState);
-      // this.randomize();
       }
+
   
 
 
@@ -69,6 +59,9 @@ render() {
   return (
     <Wrapper>
     <Navbar score={this.state.score} topScore={this.state.topScore} />
+    <Header></Header>
+    <div className="card-wrapper">
+    {/*map function to render all cards */}
     {this.state.trees.map(tree => (
       <Cards
       id={tree.id}
@@ -77,6 +70,7 @@ render() {
       changeClickedStatus={this.changeClickedStatus}
       />
     ))}
+    </div>
     <Footer />
   </Wrapper>
   );
