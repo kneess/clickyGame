@@ -5,8 +5,9 @@ const styles = {
   navbarStyle: {
     background: "green",
     justifyContent: "space-between",
-    width: "100%",
+    width: "97%",
     height: "80px",
+    marginTop: "-20px",
 
   }
 };
