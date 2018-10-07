@@ -25,6 +25,7 @@ class App extends Component  {
   highScore = () => {
     //check to see if current score is higher than topSCore
     if(this.state.score > this.state.topScore) {
+      alert("New high score: " + this.state.score)
       this.setState({ topScore: this.state.score})
     } else 
     this.setState({ topScore: this.state.topScore})
