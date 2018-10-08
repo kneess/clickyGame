@@ -15,3 +15,7 @@ Collect points by clicking on the images without repeating a click on an image. 
 ## Game link
 [Game](https://young-woodland-74395.herokuapp.com/)
 
+------------------
+
+![Clicky](/images/clicky.png)
+
