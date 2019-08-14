@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const styles = {
   navbarStyle: {
@@ -15,7 +15,6 @@ const styles = {
 const Navbar = props => (
   <navbar style={styles.navbarStyle} className="navbar navbar-static-top">
     <strong><h3>Clicky Game</h3></strong>
-    <a>Click and image to begin</a>
     <a>Score: {props.score} | Top Score: {props.topScore}</a>
   </navbar>
 );

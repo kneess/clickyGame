@@ -60,7 +60,7 @@ render() {
   return (
     <Wrapper>
     <Navbar score={this.state.score} topScore={this.state.topScore} />
-    <Header></Header>
+    <Header />
     <div className="card-wrapper">
     {/*map function to render all cards */}
     {this.state.trees.map(tree => (
