@@ -5,10 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  width: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  width: 100%;
 }
