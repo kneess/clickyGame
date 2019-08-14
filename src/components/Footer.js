@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   footerStyle: {
-    background: "green",
+    background: "#708090",
     justifyContent: "space-between",
     width: "100%",
     height: "50px"

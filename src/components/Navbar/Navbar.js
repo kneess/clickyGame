@@ -3,9 +3,9 @@ import "./Navbar.css";
 
 const styles = {
   navbarStyle: {
-    background: "green",
+    background: "#708090",
     justifyContent: "space-between",
-    width: "97%",
+    width: "100%",
     height: "80px",
     marginTop: "-20px",
 
