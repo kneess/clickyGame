@@ -40,11 +40,6 @@
         "name": "pine"
     },
     {
-        "id":9,
-        "image" : "https://cdn8.bigcommerce.com/s-999jbj41m8/images/stencil/800x800/products/446/2161/redmaple2__99420.1501089808.1280.1280__05312.1513984814.jpg?c=2",
-        "name": "maple"
-    },
-    {
         "id":10,
         "image" : "https://cdn8.bigcommerce.com/s-999jbj41m8/images/stencil/800x800/products/167/2897/shutterstock_628403774__51361.1509235306.1280.1280__34272.1514127191.jpg?c=2",
         "name": "weeping willow"
@@ -52,11 +47,6 @@
     {
         "id":11,
         "image" : "http://faithhopeandheartwarming.com/wp-content/uploads/2015/07/16296414_s-Acacia-Tree-123rf-Purchased-1.jpg",
-        "name": "sycamore"
-    },
-    {
-        "id":12,
-        "image" : "https://c8.alamy.com/comp/CY69N8/sycamore-trees-in-autumn-with-autumn-foliage-on-tree-and-fallen-leaves-CY69N8.jpg",
         "name": "sycamore"
     }
 

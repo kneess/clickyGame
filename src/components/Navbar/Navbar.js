@@ -15,7 +15,7 @@ const styles = {
 const Navbar = props => (
   <navbar style={styles.navbarStyle} className="navbar navbar-static-top">
     <strong><h3>Clicky Game</h3></strong>
-    <a>Score: {props.score} | Top Score: {props.topScore}</a>
+    <a className="score">Score: {props.score} | Top Score: {props.topScore}</a>
   </navbar>
 );
   export default Navbar;
